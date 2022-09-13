@@ -12,8 +12,6 @@
 
 ## 💼 Tecnologias utilizadas
 
-**Obs**: Os comportamentos em JavaScript que o exercicio pede serão adicionados em breve...
-
 Utilizei apenas essas tecnologias com base em práticar meus conhecimentos:
 
 - <img align="center" alt="Joao-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> HTML;
