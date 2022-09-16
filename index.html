@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Import Fonts, icons and CSS Styles -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +17,11 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/elements.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
+
+    <!-- API SCROLL REVEAL -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Landing Page</title>
   </head>
   <body cz-shortcut-listen="true">
@@ -23,27 +30,27 @@
     <aside class="menu white-bg">
       <div class="menu-content main-content">
         <h1 onclick="getElementById('close-menu').checked = false;" >
-          <a href="#home" rel="noopener noreferrer">LOGO</a>
+          <a href="#home" class="top_effect" rel="noopener noreferrer">LOGO</a>
         </h1>
         <nav>
           <ul class="nav__list" onclick="getElementById('close-menu').checked = false;" >
             <li>
-              <a href="#intro" rel="noopener noreferrer">intro</a>
+              <a href="#intro" class="top_effect" rel="noopener noreferrer">intro</a>
             </li>
             <li>
-              <a href="#grid-one" rel="noopener noreferrer">grid-one</a>
+              <a href="#grid-one" class="top_effect" rel="noopener noreferrer">grid-one</a>
             </li>
             <li>
-              <a href="#gallery" rel="noopener noreferrer">gallery</a>
+              <a href="#gallery" class="top_effect" rel="noopener noreferrer">gallery</a>
             </li>
             <li>
-              <a href="#grid-two" rel="noopener noreferrer">grid-two</a>
+              <a href="#grid-two" class="top_effect" rel="noopener noreferrer">grid-two</a>
             </li>
             <li>
-              <a href="#pricing" rel="noopener noreferrer">pricing</a>
+              <a href="#pricing" class="top_effect" rel="noopener noreferrer">pricing</a>
             </li>
             <li>
-              <a href="#contact" rel="noopener noreferrer">contact</a>
+              <a href="#contact" class="top_effect" rel="noopener noreferrer">contact</a>
             </li>
           </ul>
         </nav>
@@ -78,12 +85,12 @@
           performance. This post details some background information on the
           experience of porting Firefox to run natively on these CPUs.
         </p>
-        <p>
+        <p class="desc-white-bg">
           Well start with some background on the Mac transition and give an
           overview of Firefox internals that needed to know about the new
           architecture, before moving on to the concept of Universal Binaries.
         </p>
-        <p>
+        <p class="desc-white-bg">
           Well then explain how DRM/EME works on the new platform, talk about
           our experience with macOS Big Sur, and discuss various updater
           problems we had to deal with. Well conclude with the release and an
@@ -96,7 +103,7 @@
         <h2 class="heading-grid">My Grid</h2>
         <p class="text-grid-desc">Uma breve descrição</p>
         <div class="grid-flow">
-          <article>
+          <article class="scrolleffect">
             <h3>Teste</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
@@ -105,7 +112,7 @@
               ad dolores provident maiores.
             </p>
           </article>
-          <article>
+          <article class="scrolleffect">
             <h3>Teste</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
@@ -114,7 +121,7 @@
               ad dolores provident maiores.
             </p>
           </article>
-          <article>
+          <article class="scrolleffect">
             <h3>Teste</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
@@ -175,7 +182,7 @@
         <h2 class="heading-grid">My Grid</h2>
         <p class="text-grid-desc">Uma breve descrição</p>
         <div class="grid-flow">
-          <article>
+          <article class="scrolleffect">
             <h3>Teste</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
@@ -184,7 +191,7 @@
               ad dolores provident maiores.
             </p>
           </article>
-          <article>
+          <article class="scrolleffect">
             <h3>Teste</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
@@ -193,7 +200,7 @@
               ad dolores provident maiores.
             </p>
           </article>
-          <article>
+          <article class="scrolleffect">
             <h3>Teste</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
@@ -207,9 +214,9 @@
     </section>
     <section id="pricing" class="section white-bg">
       <div class="main-content pricing-content">
-        <h2>Pricing</h2>
-        <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machines performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
-        <p>Well start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+        <h2 class="text_scroll">Pricing</h2>
+        <p class="text_scroll">The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machines performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+        <p class="text_scroll">Well start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
         <div class="responsive-table">
           <table>
             <caption>Pricing table</caption>
@@ -277,7 +284,7 @@
         </figure>
         <div class="contact-form">
           <fieldset class="form-grid">
-            <legend>Contact me</legend>
+            <legend class="text_scroll">Contact me</legend>
             <div class="form-group">
               <label for="first-name">First name</label>
               <input type="text" name="first-name" id="first-name" placeholder="Your name">
@@ -302,10 +309,15 @@
       </div>
     </section>
     <footer class="footer" class="white-bg">
-      <p><a href="https://www.linkedin.com/in/joaogabriel0/" target="_blank" rel="noopener">Feito com <span class="heart">&hearts;</span> por João Gabriel</a></p>
+      <p class="footer-ef"><a href="https://www.linkedin.com/in/joaogabriel0/" target="_blank" rel="noopener">Feito com <span class="heart">&hearts;</span> por João Gabriel</a></p>
     </footer>
 
    <a href="#" class="back-to-top" rel="noopener noreferrer">➤</a>
-
+   
+   <!-- <========== SCROLL REVEAL =========> -->
+    <script src="./assets/js/scrollreveal.ef.js"></script>
+    <script src="./assets/js/scrollreveal.es.js"></script>
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/scrollreveal.js"></script>
   </body>
 </html>
